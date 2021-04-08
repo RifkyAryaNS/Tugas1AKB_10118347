@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/ic_launcher_foreground">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:text="PROFILE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:layout_alignParentTop="true"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/foto2"/>
+            <TextView
+                android:id="@+id/tv_nim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nim :"/>
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama :"/>
+            <TextView
+                android:id="@+id/tv_kelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kelas :"/>
+
+            <TextView
+                android:id="@+id/tv_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Deskripsi :"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
